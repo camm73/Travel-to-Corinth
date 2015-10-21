@@ -22,12 +22,10 @@ public class Commoner extends People {
 		this.y = y * 16;
 		this.id = id;
 		this.spoken = spoken;
-		System.out.println(id);
 		if (random.nextInt(2) == 1 && id != 11) {
 			gender = 1;
 		} else if (id == 11) {
 			gender = 2;
-			System.out.println("gender " + gender);
 		} else {
 			gender = 0;
 		}
@@ -174,8 +172,8 @@ public class Commoner extends People {
 					break;
 				case 11:
 					if (!spoken) {
-						say("The literary criticism of Corithians is how Paul use metaphors to addressvthe divisions and", 1);
-						say("disunity of the church and how they must be united ", 2);
+						say("The form criticism of Corithians is how Paul use metaphors to address the divisions and", 1);
+						say("disunity of the church. Paul says they are many parts that must make one body.", 2);
 						Game.statements--;
 						spoken = true;
 

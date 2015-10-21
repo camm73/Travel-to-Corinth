@@ -44,10 +44,9 @@ public class Map extends Canvas {
 				pixels[(x + 2) + y * width] = 0;
 			}
 
-			pixels[px + py * width] = 0x0000ff;
-			/*
-			 * pixels[px + py + 1 * width] = 0x0000ff; pixels[px + py + 2 * width] = 0x0000ff;
-			 */
+			pixels[(px) + py * width] = 0xffff00;
+			pixels[(px + 1) + py * width] = 0xffff00;
+			pixels[(px + 2) + py * width] = 0xffff00;
 		}
 
 		g.drawImage(map, Game.WIDTH * Game.SCALE - width, height, width, height, null);

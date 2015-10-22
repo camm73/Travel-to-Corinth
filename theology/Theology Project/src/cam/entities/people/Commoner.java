@@ -151,7 +151,7 @@ public class Commoner extends People {
 					break;
 				case 8:
 					if (!spoken) {
-						say(">>Paul told us to be generous in order to test our geniuneness of our love.<<", 1);
+						say(">>Paul told us to be generous in order to test our genuineness of our love.<<", 1);
 						Game.statements--;
 						spoken = true;
 					}
